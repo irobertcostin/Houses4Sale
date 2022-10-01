@@ -1,0 +1,102 @@
+img, input , button {
+    display: block;
+}
+
+.delete {
+    border: none;
+    background-color:#dba512;
+    color:black;
+    margin-bottom: 50px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    margin: 0px;
+    background-color:#0b4db8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: white;
+}
+
+
+
+.new-input {
+    /* border: 2px solid red; */
+    color: white;
+    background-color: #dba512;
+
+    width: 90%;
+    border-radius: 10px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    padding: 20px;
+
+}
+
+.new-input div {
+    margin: auto;
+    height: auto;
+}
+
+.offers {
+    color: white;
+    /* border: 2px solid green; */
+
+    width: 90%;
+    margin-bottom: 20px;
+    background-color: #9c0997;
+    border-radius: 10px;
+}
+
+.table-head tr th{
+    border-bottom: 3px solid white;
+}
+
+.table-body {
+    text-align: end;
+}
+
+.button-div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.button {
+    border: none;
+    width: auto;
+    background-color: #9c0997;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.selected {
+    color:#dba512;
+}
