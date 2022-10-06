@@ -32,11 +32,7 @@ function populateTable (arr) {
 
 function getElement () {
 
-    let tip = document.querySelector(".tip")
-    let metri = document.querySelector(".metri")
-    let camere = document.querySelector(".camere")
-    let an = document.querySelector(".an")
-    let pret = document.querySelector(".pret")
+
 
 
     let locuinta = {
@@ -92,4 +88,28 @@ function deleteElements (arr,parametru) {
     }
     return nou;
 
+}
+
+
+function getHouseByMeters (arr, metri) {
+
+    let x = "";
+
+    for (i=0;i<arr.length;i++){
+
+        if(arr[i].meter == metri) {
+            x = arr[i];
+        }
+
+    }
+    return x;
+
+}
+
+function resetRows () {
+    tip.value="";
+    metri.value="";
+    camere.value="";
+    an.value="";
+    pret.value="";
 }

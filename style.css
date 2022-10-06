@@ -11,6 +11,15 @@ img, input , button {
     border-radius: 2px;
 }
 
+.edit , .search {
+    border: none;
+    background-color:#dba512;
+    color:black;
+    margin-bottom: 50px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
 body {
     font-family: "Audiowide", sans-serif;
     margin: 0px;
@@ -99,4 +108,14 @@ input {
 
 .selected {
     color:#dba512;
+}
+
+.butoanele {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid white; */
+    gap: 20px;
 }
