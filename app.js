@@ -18,6 +18,10 @@ let an = document.querySelector(".an")
 let pret = document.querySelector(".pret")
 
 
+// search
+
+let search = document.querySelector(".search");
+
 
 adaugaElemente.addEventListener("click", () => {
 
@@ -90,6 +94,16 @@ editare.addEventListener("click", ()=> {
     resetRows();
 
 })
+
+search.addEventListener("click", ()=> {
+
+
+    populateTable(searchByMeters(houses,metri.value));
+
+    resetRows();
+
+})
+
 
 populateTable(houses);
 

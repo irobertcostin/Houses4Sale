@@ -122,3 +122,18 @@ function updateHouse (arr,metri) {
 
 
 }
+
+
+function searchByMeters (arr,criteriuMetri) {
+
+    let searched = [];
+
+    for (i=0;i<arr.length;i++){
+
+        if (arr[i].meter>=criteriuMetri){
+            searched.push(arr[i]);
+        }
+
+    }
+return searched;
+}
