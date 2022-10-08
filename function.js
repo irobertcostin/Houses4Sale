@@ -113,3 +113,12 @@ function resetRows () {
     an.value="";
     pret.value="";
 }
+
+function updateHouse (arr,metri) {
+
+    arr = deleteElements(arr,metri.meter);
+    arr.push(metri);
+    return arr;
+
+
+}

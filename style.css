@@ -119,3 +119,12 @@ input {
     /* border: 2px solid white; */
     gap: 20px;
 }
+
+.butoanele button:hover {
+    background-color: #9c0997;
+    color: #dba512;
+}
+
+.button:hover {
+    background-color: black;
+}

@@ -4,7 +4,12 @@ let selectieElemente = document.querySelector(".table-body")
 let obiectSelectat = 0;
 let interChange ="";
 
+//delete
 let stergereElemente = document.querySelector(".delete");
+
+
+//edit
+let editare = document.querySelector(".edit");
 
 let tip = document.querySelector(".tip")
 let metri = document.querySelector(".metri")
@@ -68,4 +73,23 @@ stergereElemente.addEventListener("click", () => {
     resetRows();
 })
 
+editare.addEventListener("click", ()=> {
+
+    let house = {
+        type:tip.value,
+        meter:metri.value,
+        rooms:camere.value,
+        year:an.value,
+        price:pret.value
+    }
+
+    houses = updateHouse(houses,house);
+
+    populateTable(houses);
+
+    resetRows();
+
+})
+
 populateTable(houses);
+
